@@ -4,7 +4,7 @@
 <head>
     <title>Primal Software</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
@@ -15,9 +15,9 @@
             margin: 0;
             padding: 0;
             width: 150px;
-            background-color:rgb(138, 76, 96);
+            background-color: rgb(138, 76, 96);
             position: fixed;
-            height: 22%;
+            height: 25%;
             overflow: auto;
         }
 
@@ -25,27 +25,75 @@
             display: block;
             color: black;
             padding: 16px;
+            font-family: "Arial Black", Gadget, sans-serif;
+            text-align: center;
             text-decoration: none;
         }
 
         .sidebar a.active {
             background-color: rgb(2, 1, 1);
-            color:wheat;
+            color: wheat;
         }
 
         .sidebar a:hover:not(.active) {
             background-color: rgb(160, 160, 160);
-            color:wheat;
+            color: wheat;
         }
 
         div.content {
-            margin-left: 900px;
+            margin-left: 500px;
             padding: 1px 16px;
-            height: 1000px;
+
+        }
+
+        .title {
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 70px;
+            text-align: center;
+           
+            color: rgb(253, 253, 253);
+           
+           
+        }
+
+
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
         }
     </style>
 
 <body>
+
+   
+    <h1 class="title">Primal Software</h1>
+    <hr>
+
+    <div class="content">
+
+
+
+    </div>
+
     <div class="sidebar">
         <a class="active" href="#">Home</a>
         <a href="#">Games</a>
@@ -53,12 +101,7 @@
         <a href="#">Contact</a>
     </div>
 
-    <div class="content">
-        
-        <h1>Hey</h1>
-       
 
-    </div>
 
 </body>
 
