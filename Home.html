@@ -5,75 +5,66 @@
     <title>Primal Software</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed&display=swap" rel="stylesheet">
     <style>
         body {
             background-image: url("Assets/back.jpg");
         }
-
+        
         .sidebar {
             margin: 0;
             padding: 0;
-            width: 150px;
-            background-color: rgb(138, 76, 96);
+            width: 100px;
             position: fixed;
-            height: 25%;
+            height: 100%;
             overflow: auto;
         }
-
+        
         .sidebar a {
             display: block;
             color: black;
             padding: 16px;
-            font-family: "Arial Black", Gadget, sans-serif;
+            font-family: 'IBM Plex Sans Condensed', sans-serif;
             text-align: center;
             text-decoration: none;
         }
-
+        
         .sidebar a.active {
             background-color: rgb(2, 1, 1);
             color: wheat;
         }
-
+        
         .sidebar a:hover:not(.active) {
             background-color: rgb(160, 160, 160);
             color: wheat;
         }
-
+        
         div.content {
             margin-left: 500px;
             padding: 1px 16px;
-
         }
-
+        
         .title {
-            font-family: "Arial Black", Gadget, sans-serif;
-            font-size: 70px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 40px;
             text-align: center;
-           
-            color: rgb(253, 253, 253);
-           
-           
+            color: wheat;
         }
-
-
-
+        
         @media screen and (max-width: 700px) {
             .sidebar {
                 width: 100%;
                 height: auto;
                 position: relative;
             }
-
             .sidebar a {
                 float: left;
             }
-
             div.content {
                 margin-left: 0;
             }
         }
-
+        
         @media screen and (max-width: 400px) {
             .sidebar a {
                 text-align: center;
@@ -82,28 +73,29 @@
         }
     </style>
 
-<body>
-
-   
-    <h1 class="title">Primal Software</h1>
-    <hr>
-
-    <div class="content">
+    <body>
 
 
+        <h1 class="title"><img src="Assets/weaver.png" alt="Weaver" width="52" height="52">Primal Software</h1>
 
-    </div>
+        <hr>
 
-    <div class="sidebar">
-        <a class="active" href="#">Home</a>
-        <a href="#">Games</a>
-        <a href="#">Apps</a>
-        <a href="#">Contact</a>
-    </div>
+        <div class="content">
 
 
 
-</body>
+        </div>
+
+        <nav class="sidebar">
+            <a class="active" href="Home.html">Home</a>
+            <a href="Games.html">Games</a>
+            <a href="Apps.html">Apps</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+
+
+    </body>
 
 
 </html>

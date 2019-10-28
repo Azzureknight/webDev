@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Primal Software</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+    
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .sidebar a.active {
+        background-color: rgb(2, 1, 1);
+        color: wheat;
+    }
+    
+    .sidebar a:hover:not(.active) {
+        background-color: rgb(160, 160, 160);
+        color: wheat;
+    }
+</style>
+
+<body>
+    <h1>CONTACTOS</h1>
+    <nav class="sidebar">
+        <a class="active" href="Home.html">Home</a>
+        <a href="Games.html">Games</a>
+        <a href="Apps.html">Apps</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</body>
+
+</html>
