@@ -5,46 +5,88 @@
     <title>Primal Software</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed&display=swap"
+        rel="stylesheet">
+    <style>
+        @media only screen and (max-width:620px) {
 
-</head>
-<style>
-    .sidebar {
-        margin: 0;
-        padding: 0;
-        width: 100px;
-        position: fixed;
-        height: 100%;
-        overflow: auto;
-    }
-    
-    .sidebar a {
-        display: block;
-        color: black;
-        padding: 16px;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        text-align: center;
-        text-decoration: none;
-    }
-    
-    .sidebar a.active {
-        background-color: rgb(2, 1, 1);
-        color: wheat;
-    }
-    
-    .sidebar a:hover:not(.active) {
-        background-color: rgb(160, 160, 160);
-        color: wheat;
-    }
-</style>
+            /* For mobile phones: */
+            .sidebar,
+            .title {
+                width: 100%;
+            }
+        }
+
+        body {
+           
+        }
+
+        .sidebar {
+            float: left;
+            width: 10%;
+            text-align: center;
+        }
+
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 10px;
+            margin-top: 7px;
+            width: 100%;
+            font-family: 'IBM Plex Sans Condensed', sans-serif;
+            text-align: center;
+            font-size: 1.5vw;
+            text-decoration: none;
+        }
+
+        .sidebar a.active {
+            background-color: rgb(46, 9, 9);
+            color: wheat;
+        }
+
+        .sidebar a:hover:not(.active) {
+            background-color: rgb(160, 160, 160);
+            color: wheat;
+        }
+
+        div.content {
+            margin-left: 500px;
+            padding: 1px 16px;
+        }
+
+        .title {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 2.5vw;
+            text-align: center;
+            color: wheat;
+        }
+    </style>
 
 <body>
-    <h1>GAMES</h1>
+
+    <div class="title">
+        <h1>Primal Software</h1>
+        
+    </div>
+
     <nav class="sidebar">
         <a class="active" href="Home.html">Home</a>
         <a href="Games.html">Games</a>
         <a href="Apps.html">Apps</a>
         <a href="Contact.html">Contact</a>
     </nav>
+
+    <div class="content">
+
+        <h1>GAMES</h1>
+
+    </div>
+
+
+
+
+
 </body>
+
 
 </html>
