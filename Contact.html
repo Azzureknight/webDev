@@ -18,9 +18,8 @@
         }
 
         body {
-        
+            background-image: url("Assets/back.jpg");
         }
-
         .sidebar {
             float: left;
             width: 10%;
@@ -42,6 +41,7 @@
         .sidebar a.active {
             background-color: rgb(46, 9, 9);
             color: wheat;
+            transition: 2s;
         }
 
         .sidebar a:hover:not(.active) {
@@ -70,10 +70,10 @@
     </div>
 
     <nav class="sidebar">
-        <a class="active" href="Home.html">Home</a>
+        <a href="Home.html">Home</a>
         <a href="Games.html">Games</a>
         <a href="Apps.html">Apps</a>
-        <a href="Contact.html">Contact</a>
+        <a class="active" href="Contact.html">Contact</a>
     </nav>
 
     <div class="content">
